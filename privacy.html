@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Velvet Notes</title>
+  <meta name="description" content="Privacy Policy for Velvet Notes (com.vesperalabs.velvetnotes) by Vespera Labs." />
+  <style>
+    :root {
+      --bg: #000000;
+      --surface: rgba(24, 24, 28, 0.72);
+      --border: rgba(255, 255, 255, 0.10);
+      --text: #f5f5f7;
+      --muted: #98989f;
+      --accent: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Google Sans", "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      padding: 24px 16px 64px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .nav {
+      margin-bottom: 28px;
+    }
+    .nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .nav a:hover { color: var(--text); }
+    h1 {
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .meta {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+      margin-bottom: 16px;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    h2 {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+    p, li {
+      font-size: 14px;
+      color: var(--muted);
+    }
+    p + p { margin-top: 10px; }
+    ul {
+      padding-left: 18px;
+      margin-top: 8px;
+    }
+    li + li { margin-top: 6px; }
+    code {
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12.5px;
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.08);
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav"><a href="./index.html">← Back to Velvet Notes</a></div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective Date: November 27, 2026 · App: Velvet Notes (<code>com.vesperalabs.velvetnotes</code>) · Developer: Vespera Labs</p>
+
+    <div class="card">
+      <h2>1. Overview &amp; Local-First Storage</h2>
+      <p>
+        Velvet Notes is built on a strict local-first architecture. All notes, checklists, folders, and local version snapshots are stored directly on your Android device. Vespera Labs does not operate backend servers that collect, view, or store your notes.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>2. Google Sign-In &amp; Google Drive App Data Scope</h2>
+      <p>
+        If you optionally choose to enable Cloud Sync, Velvet Notes uses Google Sign-In and requests only the restricted application-specific scope:
+      </p>
+      <ul>
+        <li><code>https://www.googleapis.com/auth/drive.appdata</code> — Allows Velvet Notes to create, read, update, and delete its own hidden sync files inside your personal Google Drive App Data folder.</li>
+        <li>Velvet Notes <strong>cannot</strong> see, access, modify, or delete any other files or folders in your Google Drive.</li>
+        <li>Your Google account email and profile name are displayed solely inside the app's Cloud Sync settings to show which account is connected.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>3. Client-Side Vault Encryption</h2>
+      <p>
+        When you lock a note with a PIN or passphrase, Velvet Notes derives an encryption key on your device using PBKDF2-HMAC-SHA256 and encrypts the note's body and checklist items using AES-256-GCM before uploading the sync file to your Google Drive App Data folder. Your PIN/passphrase and unencrypted vault master key are never transmitted to Vespera Labs.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>4. Data Sharing &amp; Third-Party Analytics</h2>
+      <p>
+        Velvet Notes does not sell, rent, or share user data with third parties. The application contains no third-party advertising SDKs, behavioral trackers, or telemetry collectors.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>5. Data Retention &amp; Deletion</h2>
+      <p>
+        You remain in full control of your data at all times:
+      </p>
+      <ul>
+        <li>Deleting a note permanently inside Velvet Notes removes it locally and deletes the corresponding sync file from your Google Drive App Data folder.</li>
+        <li>You can disconnect Google Drive at any time from <strong>Folders → Settings → Cloud Sync</strong>, or revoke access from your Google Account security settings (<strong>Google Account → Security → Third-party apps &amp; services</strong>).</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>6. Google API Services User Data Policy</h2>
+      <p>
+        Velvet Notes' use and transfer to any other app of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener" style="color:#f5f5f7;">Google API Services User Data Policy</a>, including the Limited Use requirements.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>7. Contact</h2>
+      <p>
+        For privacy questions or support regarding Velvet Notes, contact Vespera Labs via our official GitHub organization: <a href="https://github.com/VesperaLabs" target="_blank" rel="noopener" style="color:#f5f5f7;">github.com/VesperaLabs</a>.
+      </p>
+    </div>
+
+    <footer>
+      © 2026 Vespera Labs · Velvet Notes
+    </footer>
+  </div>
+</body>
+</html>

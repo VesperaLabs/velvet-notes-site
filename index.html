@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velvet Notes — Minimalist Encrypted Notes for Android</title>
+  <meta name="description" content="Velvet Notes by Vespera Labs — Local-first, distraction-free notes with client-side AES-256-GCM vault encryption and private Google Drive sync." />
+  <style>
+    :root {
+      --bg: #000000;
+      --surface: rgba(24, 24, 28, 0.72);
+      --border: rgba(255, 255, 255, 0.10);
+      --text: #f5f5f7;
+      --muted: #98989f;
+      --accent: #e5e5ea;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Google Sans", "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 24px 16px 64px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    header {
+      padding: 40px 0 32px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 32px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 5px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+    .subtitle {
+      font-size: 16px;
+      color: var(--muted);
+      max-width: 580px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    @media (min-width: 600px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .card h2 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--accent);
+    }
+    .card p {
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    a.btn {
+      display: inline-block;
+      padding: 11px 18px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+    a.btn:hover {
+      background: rgba(255, 255, 255, 0.10);
+      border-color: rgba(255, 255, 255, 0.22);
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    footer a {
+      color: var(--text);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">Vespera Labs · Android</div>
+      <h1>Velvet Notes</h1>
+      <p class="subtitle">
+        A fast, local-first Android notes workspace crafted for OLED displays — featuring client-side AES-256-GCM vault encryption and private Google Drive sync.
+      </p>
+      <div class="actions">
+        <a class="btn" href="./privacy.html">Privacy Policy</a>
+        <a class="btn" href="https://github.com/VesperaLabs" target="_blank" rel="noopener">Vespera Labs on GitHub</a>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Local-First Architecture</h2>
+        <p>Every note, checklist, and folder lives directly on your device for instant offline access with zero lock-in.</p>
+      </div>
+      <div class="card">
+        <h2>AES-256-GCM Vault</h2>
+        <p>Locked notes are encrypted client-side using a key derived from your PIN or passphrase before ever leaving your phone.</p>
+      </div>
+      <div class="card">
+        <h2>Private Drive Sync</h2>
+        <p>Optional sync uses Google Drive's isolated hidden App Data folder — Velvet Notes cannot read your personal Drive files.</p>
+      </div>
+      <div class="card">
+        <h2>Zero Tracking</h2>
+        <p>No ads, no analytics SDKs, and no external developer servers storing your personal notes.</p>
+      </div>
+    </section>
+
+    <footer>
+      <span>© 2026 Vespera Labs</span>
+      <a href="./privacy.html">Read Privacy Policy →</a>
+    </footer>
+  </div>
+</body>
+</html>
