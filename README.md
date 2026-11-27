@@ -4,7 +4,7 @@ A local-first, minimalist Android notes application crafted for AMOLED displays 
 
 ## Links
 - **Home Page:** [https://vesperalabs.github.io/velvet-notes](https://vesperalabs.github.io/velvet-notes-site/)
-- **Privacy Policy:** https://vesperalabs.github.io/velvet-notes/privacy.html
+- **Privacy Policy:** [https://vesperalabs.github.io/velvet-notes/privacy.html](https://vesperalabs.github.io/velvet-notes-site/privacy.html)
 
 ## Privacy & Security
 - **Local-First:** Notes, checklists, folders, and version snapshots live on your device.
