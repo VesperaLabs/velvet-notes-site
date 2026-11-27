@@ -3,7 +3,7 @@
 A local-first, minimalist Android notes application crafted for AMOLED displays with client-side **AES-256-GCM** vault encryption and private **Google Drive App Data** synchronization.
 
 ## Links
-- **Home Page:** https://vesperalabs.github.io/velvet-notes/
+- **Home Page:** https://vesperalabs.github.io/velvet-notes
 - **Privacy Policy:** https://vesperalabs.github.io/velvet-notes/privacy.html
 
 ## Privacy & Security
